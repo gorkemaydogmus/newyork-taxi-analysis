@@ -17,7 +17,7 @@ During data preprocessing, the following cleaning steps were performed to ensure
   
 - **Zero `total_amount` Values**: Removed these entries because zero values were misleading and did not contribute to the project objectives.
 
-- **Excessively High `total_amount` Values**: Filtered out values higher than $200. Given that the average `total_amount` was approximately $15, values exceeding $200 were deemed unrealistic. A total of 1,166 data points with `total_amount` above $200 were removed. This removal was deemed acceptable due to the relatively small proportion of these data points in a dataset of 7,696,617 points.
+- **Excessively High `total_amount` Values**: Filtered out values higher than $200. Given that the average `total_amount` was approximately $15, values exceeding $200 were unrealistic. A total of 1,166 data points with `total_amount` above $200 were removed. This removal was acceptable due to the relatively small proportion of these data points in a dataset of 7,696,617 points.
 
 ## Original Features
 List of features that can be used for model development that came with the original data. 
@@ -67,4 +67,5 @@ Below is a comparison of different algorithms based on key performance metrics:
 
 Here is True vs Predicted value plot for the tuned random forest model. X axis is the true value and y axis is the predicted value. 
 
+![indir (3)](https://github.com/user-attachments/assets/02f4a79b-9bb6-4332-9011-d0aeb35350a9)
 
